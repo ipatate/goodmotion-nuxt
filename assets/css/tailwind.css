@@ -1,0 +1,7 @@
+@import './line-numbers';
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

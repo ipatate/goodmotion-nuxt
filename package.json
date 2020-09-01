@@ -7,7 +7,8 @@
     "develop": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "storybook": "nuxt storybook"
   },
   "keywords": [
     "vuejs",
@@ -17,10 +18,18 @@
   "author": "faramazpat@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "nuxt": "^2.14.4"
+    "nuxt": "^2.14.4",
+    "prism-themes": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/runtime-corejs3": "^7.11.2",
     "@nuxt/content": "^1.7.1",
-    "@nuxtjs/storybook": "^2.2.0"
+    "@nuxtjs/storybook": "^2.2.0",
+    "@nuxtjs/tailwindcss": "^3.0.2",
+    "core-js": "^3.6.5",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0",
+    "prismjs": "^1.21.0"
   }
 }
