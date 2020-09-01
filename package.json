@@ -1,0 +1,26 @@
+{
+  "name": "goodmotion-nuxt",
+  "version": "0.0.1",
+  "description": "Website statique for goodmotion.fr",
+  "main": "index.js",
+  "scripts": {
+    "develop": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "keywords": [
+    "vuejs",
+    "nuxt",
+    "javascript"
+  ],
+  "author": "faramazpat@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^2.14.4"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^1.7.1",
+    "@nuxtjs/storybook": "^2.2.0"
+  }
+}
