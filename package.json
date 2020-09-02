@@ -18,18 +18,30 @@
   "author": "faramazpat@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "lazysizes": "^5.2.2",
     "nuxt": "^2.14.4",
     "prism-themes": "^1.4.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.3.0",
     "@babel/runtime-corejs3": "^7.11.2",
     "@nuxt/content": "^1.7.1",
     "@nuxtjs/storybook": "^2.2.0",
     "@nuxtjs/tailwindcss": "^3.0.2",
     "core-js": "^3.6.5",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "lqip-loader": "^2.2.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
     "precss": "^4.0.0",
-    "prismjs": "^1.21.0"
+    "prismjs": "^1.21.0",
+    "reading-time": "^1.2.0",
+    "responsive-loader": "^2.0.2",
+    "sharp": "^0.26.0",
+    "sqip-loader": "^1.0.0",
+    "webp-loader": "^0.6.0"
   }
 }
