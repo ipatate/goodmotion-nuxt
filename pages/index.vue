@@ -20,7 +20,7 @@ export default {
     };
   },
   async fetch() {
-    this.page = await this.$content('home').fetch();
+    this.page = await this.$content('index').fetch();
   },
 };
 </script>

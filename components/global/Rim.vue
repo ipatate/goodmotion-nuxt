@@ -1,41 +1,41 @@
 <template>
   <picture>
     <source
-      v-if="this.size > 510"
+      v-if="this.realSize > 510"
       media="(max-width: 500px)"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=500&webp`)"
       type="image/webp"
     />
     <source
-      v-if="this.size > 510"
+      v-if="this.realSize > 510"
       media="(max-width: 500px)"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=500`)"
       type="image/jpeg"
     />
     <source
-      v-if="this.size > 790"
+      v-if="this.realSize > 790"
       media="(max-width: 780px)"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=780&webp`)"
       type="image/webp"
     />
     <source
-      v-if="this.size > 790"
+      v-if="this.realSize > 790"
       media="(max-width: 780px)"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=780`)"
       type="image/jpeg"
     />
     <source
-      v-if="this.size > 1190"
+      v-if="this.realSize > 1190"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=1180&webp`)"
       type="image/webp"
     />
     <source
-      v-if="this.size > 1190"
+      v-if="this.realSize > 1190"
       :data-srcset="require(`~/uploads/${this.src}?resize&size=1180`)"
       type="image/jpeg"
     />
     <img
-      :width="this.size"
+      :width="this.realSize"
       loading="lazy"
       :alt="this.alt"
       class="lazyload"
@@ -57,21 +57,36 @@ export default {
       default: '',
     },
     size: {
-      type: Number,
-      default: 1200,
+      type: String,
+      default: '1200',
     },
   },
+  mounted() {
+    // load original img
+    this.img = require(`~/uploads/${this.src}`);
+  },
+  data() {
+    return {
+      img: null,
+    };
+  },
   computed: {
+    // get the original size or size props
+    realSize() {
+      if (!this.img) return;
+      const {width} = this.img;
+      return width < this.size ? width : this.size;
+    },
     getImageSrc() {
       switch (true) {
-        case this.size < 510:
+        case this.realSize < 510:
           return require(`~/uploads/${this.src}?resize&size=500`);
           break;
-        case this.size < 790:
+        case this.realSize < 790:
           return require(`~/uploads/${this.src}?resize&size=780`);
           break;
-        case this.size < 1080:
-          return require(`~/uploads/${this.src}?resize&size=1070`);
+        case this.realSize < 1080:
+          return require(`~/uploads/${this.src}?resize&size=170`);
           break;
         default:
           return require(`~/uploads/${this.src}?resize&size=1200`);
