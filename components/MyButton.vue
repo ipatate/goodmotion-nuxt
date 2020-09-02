@@ -13,7 +13,7 @@ export default {
   props: {
     to: {
       type: String,
-      default: false,
+      default: null,
     },
     round: {
       type: Boolean,

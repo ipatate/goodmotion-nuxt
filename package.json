@@ -2,25 +2,19 @@
   "name": "goodmotion-nuxt",
   "version": "0.0.1",
   "description": "Website statique for goodmotion.fr",
-  "main": "index.js",
+  "author": "faramazpat@gmail.com",
   "scripts": {
-    "develop": "nuxt",
     "build": "nuxt build",
+    "test:unit": "vue-cli-service test:unit",
+    "develop": "nuxt",
     "generate": "nuxt generate",
     "start": "nuxt start",
     "storybook": "nuxt storybook",
     "storybook:build": "nuxt storybook build",
     "test": "jest"
   },
-  "keywords": [
-    "vuejs",
-    "nuxt",
-    "javascript"
-  ],
-  "author": "faramazpat@gmail.com",
-  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
-    "@vue/cli-plugin-unit-jest": "^4.5.4",
     "@vue/test-utils": "^1.0.5",
     "lazysizes": "^5.2.2",
     "nuxt": "^2.14.4",
@@ -36,6 +30,8 @@
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-viewport": "^6.0.21",
+    "@vue/cli-plugin-unit-jest": "^4.5.4",
+    "@vue/test-utils": "^1.0.3",
     "core-js": "^3.6.5",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
@@ -51,5 +47,11 @@
     "sharp": "^0.26.0",
     "sqip-loader": "^1.0.0",
     "webp-loader": "^0.6.0"
-  }
+  },
+  "keywords": [
+    "vuejs",
+    "nuxt",
+    "javascript"
+  ],
+  "license": "ISC"
 }
