@@ -11,6 +11,7 @@ export default {
     },
   },
   storybook: {
+    addons: ['@storybook/addon-viewport', '@storybook/addon-a11y'],
     stories: ['~/stories/**/*.stories.js'],
   },
   tailwindcss: {},

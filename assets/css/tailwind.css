@@ -1,4 +1,5 @@
 @import './line-numbers';
+@import './styles';
 
 @tailwind base;
 

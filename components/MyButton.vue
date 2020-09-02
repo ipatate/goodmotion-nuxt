@@ -1,12 +1,24 @@
 <template>
-  <button class="font-bold py-2 px-4 text-white" :class="btnClass">
+  <nuxt-link
+    :to="this.to"
+    class="font-bold py-2 px-4 text-white"
+    :class="btnClass"
+  >
     <slot />
-  </button>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
   props: {
+    to: {
+      type: String,
+      default: false,
+    },
+    round: {
+      type: Boolean,
+      default: false,
+    },
     round: {
       type: Boolean,
       default: false,
@@ -31,7 +43,7 @@ export default {
       } else if (this.type === 'secondary') {
         classes.push('bg-gray-500 hover:bg-gray-700');
       }
-      return classes.join(' ') + ' ' + this.overclass;
+      return `${classes.join(' ')} ${this.overclass}`;
     },
   },
 };
