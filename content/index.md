@@ -3,8 +3,9 @@ title: 'Home page'
 description: ''
 ---
 
-<rim src="20160816_095755_resized.jpg" alt="lol"></rim>
-![lol](20160816_095755_resized.jpg)
+<block-home title="Une démarche éco-conception web" text="L'éco-conception web consiste à diminuer l'impact écologique d'un service numérique. C'est une démarche qui doit être prise en compte dès le début du projet et durant toute la durée de vie du service web.
+  Aujourd'hui, le numérique représente 10% de la consommation mondiale d’électricité.
+  S’il était un pays, le numérique serait le 3e plus gros consommateur d’électricité !" src="eco-conception-web.jpg" button="Découvrir notre démarche"></block-home>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est autem etiam actio quaedam corporis, quae motus et status naturae congruentis tenet; Restinguet citius, si ardentem acceperit. Ille vero, si insipiens-quo certe, quoniam tyrannus -, numquam beatus; Quid de Platone aut de Democrito loquar? Duo Reges: constructio interrete. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? Nunc haec primum fortasse audientis servire debemus. Si mala non sunt, iacet omnis ratio Peripateticorum.
 

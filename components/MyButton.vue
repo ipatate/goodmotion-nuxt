@@ -9,26 +9,30 @@ export default {
   props: {
     round: {
       type: Boolean,
-      default: false
+      default: false,
     },
     type: {
       type: String,
-      default: 'primary'
-    }
+      default: 'primary',
+    },
+    overclass: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
-    btnClass () {
-      const classes = []
+    btnClass() {
+      const classes = [];
       if (this.round) {
-        classes.push('rounded-full')
+        classes.push('rounded-full');
       }
       if (this.type === 'primary') {
-        classes.push('bg-blue-500 hover:bg-blue-700')
+        classes.push('bg-blue-500 hover:bg-blue-700');
       } else if (this.type === 'secondary') {
-        classes.push('bg-gray-500 hover:bg-gray-700')
+        classes.push('bg-gray-500 hover:bg-gray-700');
       }
-      return classes.join(' ')
-    }
-  }
-}
+      return classes.join(' ') + ' ' + this.overclass;
+    },
+  },
+};
 </script>
