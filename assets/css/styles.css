@@ -1,3 +1,8 @@
+img.lazyload {
+  transition: all 0.3s;
+  filter: blur(3px);
+}
+
 .test {
   @apply text-indigo-500;
 }

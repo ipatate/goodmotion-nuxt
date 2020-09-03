@@ -16,13 +16,17 @@ const replaceTag = e => {
 
 module.exports = function(document) {
   if (document.extension === '.md') {
-    const {text} = document;
+    const {text, slug, _slug} = document;
     const {time} = readingTime(text);
     document.readingTime = time;
     // replace all image in text
     const regex = new RegExp(/(?:!\[(.*?)\]\((.*?)\))/g);
     if (text.match(regex)) {
       document.text = text.replace(regex, '<rim src="$2" alt="$1"></rim>');
+    }
+
+    if (_slug) {
+      document.slug = _slug;
     }
 
     // replace tag in children body

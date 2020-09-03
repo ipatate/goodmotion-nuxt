@@ -67,4 +67,3 @@ storybook-static
 .nuxt/
 .nuxt-storybook/
 dist/
-uploads/

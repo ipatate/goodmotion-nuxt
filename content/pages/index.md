@@ -1,6 +1,8 @@
 ---
 title: 'Home page'
 description: ''
+_slug: '/'
+order: 0
 ---
 
 <block-home

@@ -17,7 +17,7 @@ export default {
   tailwindcss: {},
   // nuxt.config.js
   optimizedImages: {
-    inlineImageLimit: 1000,
+    inlineImageLimit: -1,
     responsive: {
       adapter: require('responsive-loader/sharp'),
     },

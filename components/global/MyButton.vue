@@ -10,10 +10,11 @@
 
 <script>
 export default {
+  name: 'MyButton',
   props: {
     to: {
       type: String,
-      default: null,
+      default: '/',
     },
     round: {
       type: Boolean,

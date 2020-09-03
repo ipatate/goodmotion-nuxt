@@ -19,8 +19,9 @@ export default {
       page: {title: ''},
     };
   },
-  async fetch() {
-    this.page = await this.$content('index').fetch();
+  async asyncData({$content}) {
+    const page = await $content('pages/index').fetch();
+    return {page};
   },
 };
 </script>
