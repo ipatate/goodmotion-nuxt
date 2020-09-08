@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create navigation create 4 pages 1`] = `
+Array [
+  Object {
+    "_slug": "/",
+    "body": Object {
+      "children": Array [],
+      "type": "root",
+    },
+    "createdAt": "2020-09-01T12:05:47.520Z",
+    "description": "",
+    "dir": "/pages",
+    "extension": ".md",
+    "order": 0,
+    "path": "/pages/index",
+    "readingTime": 51900,
+    "slug": "/",
+    "title": "Home page",
+    "toc": Array [],
+    "updatedAt": "2020-09-03T17:17:05.588Z",
+  },
+  Object {
+    "_slug": "service-de-developpement-de-sites-web-et-applications-web",
+    "body": Object {
+      "children": Array [],
+      "type": "root",
+    },
+    "childrens": Array [
+      Object {
+        "_slug": "developpement-de-web",
+        "body": Object {
+          "children": Array [],
+          "type": "root",
+        },
+        "createdAt": "2020-09-03T16:35:50.930Z",
+        "dir": "/pages/services",
+        "extension": ".md",
+        "label": "Web",
+        "path": "/pages/services/web",
+        "readingTime": 107400,
+        "slug": "developpement-web",
+        "title": "Développement de Web",
+        "updatedAt": "2020-09-08T08:17:57.726Z",
+      },
+      Object {
+        "_slug": "sites-web-vitrine-pour-les-commercants-et-les-pme",
+        "body": Object {
+          "children": Array [],
+          "type": "root",
+        },
+        "createdAt": "2020-09-03T11:43:03.212Z",
+        "dir": "/pages/services",
+        "extension": ".md",
+        "label": "Site web vitrine",
+        "path": "/pages/services/sites-vitrines",
+        "readingTime": 197700,
+        "slug": "sites-web-vitrine-pour-les-commercants-et-les-pme",
+        "title": "Développement de sites web et d'applications web",
+        "updatedAt": "2020-09-03T12:38:14.916Z",
+      },
+    ],
+    "createdAt": "2020-09-03T09:41:10.808Z",
+    "dir": "/pages/services",
+    "extension": ".md",
+    "label": "Services",
+    "path": "/pages/services/index",
+    "readingTime": 105600,
+    "slug": "service-de-developpement-de-sites-web-et-applications-web",
+    "title": "Développement de sites web et d'applications web",
+    "updatedAt": "2020-09-03T17:16:59.308Z",
+  },
+]
+`;

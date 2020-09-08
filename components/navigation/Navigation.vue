@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import createNavigation from '../helpers/create-navigation';
+import createNavigation from '../../helpers/createNavigation';
 
 export default {
   name: 'navigation',
@@ -25,9 +25,7 @@ export default {
     };
   },
   async fetch() {
-    this.pages = await this.$content('pages', {deep: true})
-      // .where({slug: {$ne: '/'}})
-      .fetch();
+    this.pages = await this.$content('pages', {deep: true}).fetch();
     this.navigation = createNavigation(this.pages);
   },
 };

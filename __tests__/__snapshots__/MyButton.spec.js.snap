@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mounted App snapshot 1`] = `<nuxtlink-stub class="font-bold py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 "></nuxtlink-stub>`;
+exports[`Mounted App snapshot 1`] = `<nuxtlink-stub to="/" class="font-bold py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 "></nuxtlink-stub>`;

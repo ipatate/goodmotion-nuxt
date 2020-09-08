@@ -2,6 +2,7 @@
 title: Développement de Web Applications
 _slug: developpement-de-web-application
 label: Web Application
+nav: false
 order: 1
 ---
 
